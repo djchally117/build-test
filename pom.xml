@@ -10,7 +10,13 @@
 		
 		<!-- ========Java Properties======== -->
 		<java.version>15</java.version>
+		
+		<project.scm.id>my-scm-server</project.scm.id>
 	</properties>
+	
+	<scm>
+		<developerConnection>scm:git:git://github.com/djchally117/build-test</developerConnection>
+	</scm>
 	
 	<build>
 		<plugins>
