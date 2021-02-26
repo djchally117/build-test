@@ -15,7 +15,7 @@
 	</properties>
 	
 	<scm>
-		<developerConnection>scm:git:git://github.com/djchally117/build-test</developerConnection>
+		<developerConnection>scm:git:git@github.com:djchally117/build-test.git</developerConnection>
 	</scm>
 	
 	<build>
