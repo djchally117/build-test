@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.chally</groupId>
   <artifactId>build-test</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.1-SNAPSHOT</version>
   
   <properties>
 		<!-- ========Build Properties======== -->
@@ -27,7 +27,6 @@
     	<connection>scm:git:ssh://git@github.com-build-test:djchally117/build-test.git</connection>
     	<developerConnection>scm:git:ssh://git@github.com-build-test:djchally117/build-test.git</developerConnection>
     	 -->
-    <tag>v0.0.1</tag>
   </scm>
 	
 	<build>
