@@ -11,14 +11,22 @@
 		<!-- ========Java Properties======== -->
 		<java.version>15</java.version>
 		
-		<project.scm.id>my-scm-server</project.scm.id>
+		<project.scm.id>build-test</project.scm.id>
 	</properties>
 	
 	<scm>
 		<!-- <developerConnection>scm:git:git@github.com:djchally117/build-test.git</developerConnection>-->
+		<!--
+		This command worked for push
+		git push git@build-test:djchally117/build-test.git refs/heads/main:refs/heads/main 
+		 -->
 		<url>https://github.com/djchally117/build-test</url>
+		         <connection>scm:git:ssh://git@build-test:djchally117/build-test.git</connection>
+    	<developerConnection>scm:git:ssh://git@build-test:djchally117/build-test.git</developerConnection>
+		<!--
     	<connection>scm:git:ssh://git@github.com-build-test:djchally117/build-test.git</connection>
     	<developerConnection>scm:git:ssh://git@github.com-build-test:djchally117/build-test.git</developerConnection>
+    	 -->
   </scm>
 	
 	<build>
