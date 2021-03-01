@@ -43,4 +43,11 @@
 			</plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub djchally117 Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/djchally117/build-test</url>
+		</repository>
+	</distributionManagement>
 </project>
