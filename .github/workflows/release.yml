@@ -25,6 +25,7 @@ jobs:
       run: |
         git config user.email "djchally117@yahoo.com"
         git config user.name "GitHub Actions"
+        git update-index --chmod=+x mvnw
 
     - name: Publish JAR
       run: ${{ github.workspace }}/mvnw -B release:prepare release:perform
