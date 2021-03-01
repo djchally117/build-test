@@ -10,12 +10,18 @@
 		
 		<!-- ========Java Properties======== -->
 		<java.version>15</java.version>
+		
+		<project.scm.id>github</project.scm.id>
 	</properties>
 	
 	<scm>
 		<url>https://github.com/djchally117/build-test</url>
+		<connection>scm:git:https://github.com/djchally117/build-test.git</connection>
+		<developerConnection>scm:git:https://github.com/djchally117/build-test.git</developerConnection>
+		<!--
 		<connection>scm:git:git@build-test:djchally117/build-test.git</connection>
 		<developerConnection>scm:git:git@build-test:djchally117/build-test.git</developerConnection>
+		 -->
     <tag>HEAD</tag>
   </scm>
 	
