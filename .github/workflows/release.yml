@@ -18,15 +18,17 @@ jobs:
       uses: actions/setup-java@v1.4.3
       with:
         java-version: 15
-        server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
+        server-id: github
 
     - name: Configure Git user
       run: |
         git config user.email "djchally117@yahoo.com"
         git config user.name "GitHub Actions"
-        git update-index --chmod=+x mvnw
+    
+    - name: Update mvnw permissions
+      run: git update-index --chmod=+x mvnw
 
     - name: Publish JAR
-      run: ${{ github.workspace }}/mvnw -B release:prepare release:perform
+      run: ./mvnw -B release:prepare release:perform
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
