@@ -10,6 +10,6 @@ public class TestUtil {
 	private TestUtil() {}
 	
 	public static String getText() {
-		return "1";
+		return "2";
 	}
 }
