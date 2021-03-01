@@ -10,23 +10,12 @@
 		
 		<!-- ========Java Properties======== -->
 		<java.version>15</java.version>
-		
-		<project.scm.id>build-test</project.scm.id>
 	</properties>
 	
 	<scm>
-		<!-- <developerConnection>scm:git:git@github.com:djchally117/build-test.git</developerConnection>-->
-		<!--
-		This command worked for push
-		git push git@build-test:djchally117/build-test.git refs/heads/main:refs/heads/main 
-		 -->
 		<url>https://github.com/djchally117/build-test</url>
-		         <connection>scm:git:git@build-test:djchally117/build-test.git</connection>
-    	<developerConnection>scm:git:git@build-test:djchally117/build-test.git</developerConnection>
-		<!--
-    	<connection>scm:git:ssh://git@github.com-build-test:djchally117/build-test.git</connection>
-    	<developerConnection>scm:git:ssh://git@github.com-build-test:djchally117/build-test.git</developerConnection>
-    	 -->
+		<connection>scm:git:git@build-test:djchally117/build-test.git</connection>
+		<developerConnection>scm:git:git@build-test:djchally117/build-test.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 	
@@ -50,21 +39,7 @@
 				<version>3.0.0-M1</version>
 				<configuration>
 					<tagNameFormat>v@{project.version}</tagNameFormat>
-					<!--
-					<providerImplementations>
-						<git>jgit</git>
-					</providerImplementations>
-					 -->
 				</configuration>
-				<!--
-				<dependencies>
-					<dependency>
-						<groupId>org.apache.maven.scm</groupId>
-						<artifactId>maven-scm-provider-jgit</artifactId>
-						<version>1.11.2</version>
-					</dependency>
-				</dependencies>
-				 -->
 			</plugin>
 		</plugins>
 	</build>
