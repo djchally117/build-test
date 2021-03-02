@@ -8,20 +8,20 @@ import com.chally.build.Util;
 
 public class TestUtil {
 
-	@Test
-	public void testString() {
-		assertNotNull(Util.getString());
-	}
-	
-	@Test
-	public void testCharacter() {
-		assertNotNull(Util.getCharacter());
-	}
-	
-	@Test
-	public void testByte() {
-		assertNotNull(Util.getByte());
-	}
+//	@Test
+//	public void testString() {
+//		assertNotNull(Util.getString());
+//	}
+//	
+//	@Test
+//	public void testCharacter() {
+//		assertNotNull(Util.getCharacter());
+//	}
+//	
+//	@Test
+//	public void testByte() {
+//		assertNotNull(Util.getByte());
+//	}
 	
 	@Test
 	public void testShort() {
