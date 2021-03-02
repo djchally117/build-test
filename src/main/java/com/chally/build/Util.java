@@ -16,7 +16,7 @@ public class Util {
 	}
 	
 	public static Character getCharacter() {
-		return 'A';
+		return 'B';
 	}
 	
 	public static Byte getByte() {
