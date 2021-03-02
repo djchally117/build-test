@@ -5,7 +5,7 @@ on:
     types: [opened,synchronize,edited,reopened]
 
 jobs:
-  build:
+  Unit-Test-Run:
     runs-on: ubuntu-latest
 
     steps:
