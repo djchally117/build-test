@@ -8,11 +8,11 @@ import java.util.Date;
  * @author dchally
  *
  */
-public class TestUtil {
-	private TestUtil() {}
+public class Util {
+	private Util() {}
 	
 	public static String getString() {
-		return "Hellow World";
+		return "Hello World";
 	}
 	
 	public static Character getCharacter() {
