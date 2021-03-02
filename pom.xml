@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.chally</groupId>
   <artifactId>build-test</artifactId>
-  <version>0.0.6-SNAPSHOT</version>
+  <version>0.0.7-SNAPSHOT</version>
   
   <properties>
 		<!-- ========Build Properties======== -->
