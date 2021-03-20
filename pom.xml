@@ -1,26 +1,28 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.chally</groupId>
-  <artifactId>build-test</artifactId>
-  <version>0.0.17-SNAPSHOT</version>
-  
-  <properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.chally</groupId>
+	<artifactId>build-test</artifactId>
+	<version>0.0.17-SNAPSHOT</version>
+
+	<properties>
 		<!-- ========Build Properties======== -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		
+
 		<!-- ========Java Properties======== -->
 		<java.version>15</java.version>
-		
+
 		<project.scm.id>github</project.scm.id>
 	</properties>
-	
+
 	<scm>
 		<url>https://github.com/djchally117/build-test</url>
 		<connection>scm:git:https://github.com/djchally117/build-test.git</connection>
 		<developerConnection>scm:git:https://github.com/djchally117/build-test.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -29,8 +31,16 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
+		<!-- Allows properties file to have artifact version number, among other things -->
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -58,6 +68,7 @@
 				</executions>
 			</plugin>
 
+			<!--
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
@@ -71,7 +82,8 @@
 					</execution>
 				</executions>
 			</plugin>
-			
+			 -->
+			 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
@@ -80,7 +92,7 @@
 					<tagNameFormat>v@{project.version}</tagNameFormat>
 				</configuration>
 			</plugin>
-			
+
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
@@ -105,7 +117,7 @@
 										<limit implementation="org.jacoco.report.check.Limit">
 											<counter>INSTRUCTION</counter>
 											<value>COVEREDRATIO</value>
-											<minimum>0.80</minimum>
+											<minimum>0.70</minimum>
 										</limit>
 										<limit implementation="org.jacoco.report.check.Limit">
 											<counter>CLASS</counter>
