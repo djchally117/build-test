@@ -19,6 +19,8 @@ jobs:
     - run: |
         git config user.email "djchally117@yahoo.com"
         git config user.name "GitHub Actions"
+        git checkout -b merge
+    
     - run: git update-index --chmod=+x mvnw
     - run: ./mvnw -B release:prepare release:perform --no-transfer-progress
       env:
